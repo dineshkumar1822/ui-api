@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <style >
+       .nav-item{color: hsl(0, 0%, 75%);
+              font-weight: 600;
+              font-size: 13px;}
+    .navbar-brand{font-weight: 700;
+        font-size: 25px;
+        color: black;}
+     .signup{background: hsl(180, 66%, 49%);
+      border-radius: 30px;
+      padding: 8px 15px 8px 15px;
+      color: white;}
+     /*.row{height: 100vh;}*/
+     h1{font-weight: 700;
+        font-size: 60px;
+        margin-top: 140px;
+        line-height: 60px;
+        }
+        .mh{color: hsl(0, 0%, 75%);
+            font-size: 18px;
+        font-family: poppins;
+        line-height: 20px;
+        margin-bottom: 50px;}
+        .gs{color: white;
+            /*font-weight: 500;*/
+         background:hsl(180, 66%, 49%) ;
+          padding: 8px 22px 8px 22px ;           
+          border-radius: 30px;
+          }
+          img{margin-top: 20px;
+            height: 450px;}
+            .row2{ 
+                /*background-image: linear-gradient(white 50%, rgb(240, 241, 246) 50%);*/
+               background: hsl(257, 27%, 26%);
+                height: 100px;
+                width: 100%;}
+.search{background-image: url("./images/bg-shorten-desktop.svg");
+height: 100px;
+width: 100%;
+  background-color: hsl(257, 27%, 26%);
+background-repeat: no-repeat;
+border-radius: 10px;
+padding: 35px 20px 25px 60px;
+position: absolute;
+top: -60px;
+/*margin-bottom: 20px;*/
+}
+.con-2{
+margin-top: 90px;
+/*position: relative;*/
+        }
+#usr{
+    
+    width: 80%;
+    padding: 20px;
+}
+input::placeholder{padding: 30px;}
+
+
+.sb{background: hsl(180, 66%, 49%);
+margin-left: 10px;
+color: white;}
+
+/*.intro{margin-left: 120px;}*/
+.bottom{background:rgb(240, 241, 246);
+}
+.bt{ padding-top: 70px; }
+.bh{color: hsl(0, 0%, 75%);
+font-weight: 500;
+font-size: 20px;}
+
+h3{font-weight: 700;}
+
+.icon{background: hsl(257, 27%, 26%) ;
+     border-radius: 100%;
+     width: 90px;
+    height: 90px;
+   position: relative;
+   top: -22%;
+   left: 17%;
+
+}
+.im1{background-image: url("./images/icon-brand-recognition.svg");
+background-repeat: no-repeat;
+width: 70px;
+    height: 70px;
+    position: relative;
+    left: 30%;
+    right: 50%;
+    top: 20%;
+
+
+}
+.im2{background-image: url("./images/icon-detailed-records.svg");
+background-repeat: no-repeat;
+width: 70px;
+    height: 70px;
+    position: relative;
+    left: 30%;
+    right: 50%;
+    top: 27%;}
+.im3{background-image: url("./images/icon-fully-customizable.svg");
+background-repeat: no-repeat;
+width: 70px;
+    height: 70px;
+    position: relative;
+    left: 26%;
+    right: 55%;
+    top: 20%;}
+   /* .mover{position: relative;
+        top: -33%;
+        left: 25%;}*/
+        .card{height: 230px;
+        width: 300px;
+        margin-top: 50px;
+       }
+       
+        .line{ width: 600px;
+    background-color:blue;
+    height: 5px;
+    content: "";
+    /*z-index: -1;*/
+    position: absolute;
+    left: 30%;
+    top: 160%;
+   
+    }
+    .card2{margin-top: 95px;}
+.card3{margin-top: 155px;
+margin-bottom: 60px;}
+.cc{ margin-top: -30px; }
+.boost{background-image: url("./images/bg-boost-desktop.svg");
+background-color: hsl(257, 27%, 26%);
+background-repeat: no-repeat;
+background-size: cover; color: white;
+}
+.bc{padding: 20px;}
+li{list-style: none;}
+.footer{background: black;
+color: white;}
+span{margin-right: 10px;}
+.footerrow{padding: 15px;}
+li:hover{color: blue;}
+
+
+  </style>
+
+
+
+
+
+
+  
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-md  bg-white">
+        <a href="#" class="navbar-brand">Shortly</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link ">Features</a>
+                <a href="#" class="nav-item nav-link">Pricing</a>
+                <a href="#" class="nav-item nav-link">Resources</a>
+                
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+                <a href="#" class="nav-item nav-link signup">Sign Up</a>
+            </div>
+        </div>
+    </nav></div>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-6 intro">
+                <h1>More than just Shorter Links</h1>
+                <p class="mh">Build your brands recognition and detailed insights<br> on how your links are perfroming</p>
+                <a href="#" class="gs ">Get Started</a>
+            </div>
+             <div class="col-lg-6">
+                <img src="./images/illustration-working.svg" >
+            </div>
+        </div>
+    </div>
+    <div class="container con-2">
+        <div class="row mrow">
+            <div class="col-lg-12">
+        <div class="search">
+       <form class="form-inline "> 
+  <input type="text" class="form-control "placeholder="Shorten a link here ..."  id="usr" >
+  <button class="btn sb" id="shorten" >Shorten It!</button>
+
+
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid bottom">
+        <div class="text-center bt" >
+        <h3 class="">Advanced Statistics</h3>
+        <p class="bh">Track how your links are performing across the web with<br> our
+          advanced statistics dashboard.</p></div>
+<div class="line"></div>
+           
+          <div class="container">
+             
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="card card1">
+    <div class="icon"><div class="im1"></div></div>
+  <div class="cc">  <h4 class="card-header">Brand Recognition</h4>
+            <p class="card-body">Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.</p></div>
+  </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="card card2">
+ <div class="icon"><div class="im2"></div></div>
+  <div class="cc"><h4 class="card-header">Detailed Recordsn</h4>
+            <p class="card-body">Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.</p></div>
+  </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="card card3">
+   <div class="icon"><div class="im3"></div></div>
+   <div class="cc"><h4 class="card-header">Fully Customizable</h4>
+            <p class="card-body">Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.</p></div>
+  </div>
+                  </div>
+              </div>
+          </div>
+          
+    </div>
+    <div class="container-fluid boost text-center ">
+       <div class="bc"> <h3>Boost Your Link Today</h3>
+        <button class="btn gs">Get Started</button></div>
+        
+    </div>
+ <div class="container-fluid footer">
+    <div class="row footerrow">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <h4>Shortly</h4>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    
+        <ul>
+            <li><h6>Features</h6></li>
+          <li>Link Shortening</li>
+          <li>Branded Links</li>
+          <li>Analytics</li>
+        </ul>
+                    
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <ul>
+        <li><h6>Resources</h6></li>
+          <li>Blog</li>
+          <li>Developers</li>
+          <li>Support</li>
+        </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+    
+        <ul>
+            <li><h6>Company</h6></li>
+          <li>About</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+            <span><img src=".images/icon-instagram.svg"></span><span><img src=".images/icon-twitter.svg"></span><span><img src=".images/icon-facebook.svg"></span><span><img src=".images/icon-pinterest.svg"></span>
+        </div>
+    </div>
+     </div>
+         
+   
+  
+</body>
+</html>
